@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 4</title>
+    <link rel="stylesheet" href="a1.css">
+
+    <style>
+        <!--
+        .styling{
+        background-color:black;
+        color:lime;
+        font: bold 18px MS Sans Serif;
+        padding: 3px;
+        }
+        -->
+        </style>
+
+</head>
+<body>
+
+
+ 
+    <span id="digitalclock" class="styling"></span>
+
+<script>
+<!--
+
+/*****************************************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+*****************************************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='lime'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='black'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script> <br> <br>
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sed sapiente. Voluptates nihil soluta, illo sit iusto eum? Tempora quos numquam beatae laudantium architecto, fuga quis vitae sed voluptates veritatis.</p>
+
+     <img src="Watch.jpg" alt=""> <br>
+
+    <a href="a1i.html">Go to page 1</a> <br>
+    <a href="a1ii.html">Go to page 2</a> <br>
+    <a href="a1iii.html">Go to page 3</a> <br>
+    <a href="https://en.wikipedia.org/wiki/Pizza">Pizza</a> <br>
+    
+    
+
+</body>  
+
+   
+</html>

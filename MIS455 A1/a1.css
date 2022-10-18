@@ -1,0 +1,38 @@
+img{
+    width: 200px;
+    border-radius: 10%;
+    background-color: transparent;
+    
+    
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    border: 2px solid rgb(177, 144, 144);
+    box-shadow: ;
+}
+
+div{
+    border: 2px solid black;
+    margin: 40px;
+    padding: 40px;
+    box-shadow:4px 3px 5px grey;
+}
+.first{
+    background-color: rgb(215, 193, 235);
+}
+.second{
+    background-color: aqua ;
+}
+.third{
+    background-color: antiquewhite ;
+}
+
+img:hover{
+    background-color: rgb(179, 179, 221);
+    border: 2px black;
+}
